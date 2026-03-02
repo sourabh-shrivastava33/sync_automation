@@ -770,29 +770,142 @@ export default function Home() {
           id="stack"
           className="w-full max-w-7xl mx-auto px-6 mt-32 z-10"
         >
-          <p className="text-center text-xs tracking-[0.3em] uppercase text-gray-500 mb-10">
+          <p className="text-center text-xs tracking-[0.3em] uppercase text-gray-500 mb-4">
             Tech Stack
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-10">
-            {[
-              {
-                name: "Slack API",
-                color: "text-purple-600 dark:text-purple-400",
-              },
-              { name: "Notion API", color: "text-gray-900 dark:text-white" },
-              { name: "OpenAI", color: "text-green-600 dark:text-green-400" },
-              { name: "Node.js", color: "text-green-700 dark:text-green-500" },
-              { name: "Next.js", color: "text-white" },
-              { name: "Vercel", color: "text-white" },
-            ].map((tech) => (
-              <div
-                key={tech.name}
-                className={`text-sm font-bold uppercase tracking-widest ${tech.color} opacity-60 hover:opacity-100 transition-opacity duration-200`}
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white text-center mb-4">
+            BUILT ON THE TOOLS YOU ALREADY TRUST.
+          </h2>
+          <p className="text-center text-gray-600 dark:text-gray-500 text-sm mb-14 max-w-2xl mx-auto">
+            Native integrations with the CRMs, communication platforms, and
+            automation tools your team uses every day — no migration required.
+          </p>
+
+          {[
+            {
+              category: "CRM & Sales",
+              color: "text-blue-400",
+              border: "border-blue-500/20",
+              bg: "bg-blue-500/5",
+              items: [
+                "HubSpot",
+                "Salesforce",
+                "Pipedrive",
+                "Zoho CRM",
+                "Close.io",
+                "Attio",
+              ],
+            },
+            {
+              category: "Communication",
+              color: "text-purple-400",
+              border: "border-purple-500/20",
+              bg: "bg-purple-500/5",
+              items: [
+                "Slack API",
+                "Microsoft Teams",
+                "Gmail API",
+                "Outlook API",
+                "Intercom",
+              ],
+            },
+            {
+              category: "Project & Docs",
+              color: "text-cyan-400",
+              border: "border-cyan-500/20",
+              bg: "bg-cyan-500/5",
+              items: [
+                "Notion API",
+                "Asana",
+                "ClickUp",
+                "Linear",
+                "Jira",
+                "Monday.com",
+              ],
+            },
+            {
+              category: "AI & Intelligence",
+              color: "text-green-400",
+              border: "border-green-500/20",
+              bg: "bg-green-500/5",
+              items: [
+                "OpenAI GPT-4o",
+                "Whisper API",
+                "Anthropic Claude",
+                "LangChain",
+              ],
+            },
+            {
+              category: "Automation",
+              color: "text-orange-400",
+              border: "border-orange-500/20",
+              bg: "bg-orange-500/5",
+              items: [
+                "Zapier",
+                "Make (Integromat)",
+                "n8n",
+                "Webhooks",
+                "REST APIs",
+              ],
+            },
+            {
+              category: "Frontend",
+              color: "text-pink-400",
+              border: "border-pink-500/20",
+              bg: "bg-pink-500/5",
+              items: [
+                "Next.js 16",
+                "React 18",
+                "TypeScript",
+                "Tailwind CSS",
+                "next-themes",
+              ],
+            },
+            {
+              category: "Backend & Infra",
+              color: "text-emerald-400",
+              border: "border-emerald-500/20",
+              bg: "bg-emerald-500/5",
+              items: [
+                "Node.js",
+                "Nodemailer",
+                "Zod",
+                "Helmet.js",
+                "Vercel Serverless",
+              ],
+            },
+            {
+              category: "DevOps & Testing",
+              color: "text-yellow-400",
+              border: "border-yellow-500/20",
+              bg: "bg-yellow-500/5",
+              items: [
+                "Turborepo",
+                "pnpm Workspaces",
+                "Playwright",
+                "Jest",
+                "GitHub Actions",
+              ],
+            },
+          ].map((group) => (
+            <div key={group.category} className="mb-8">
+              <p
+                className={`text-xs font-bold uppercase tracking-widest ${group.color} mb-3`}
               >
-                {tech.name}
+                {group.category}
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {group.items.map((item) => (
+                  <span
+                    key={item}
+                    className={`text-xs font-semibold px-4 py-2 rounded-full border ${group.border} ${group.bg} ${group.color} hover:opacity-100 opacity-75 transition-opacity duration-200`}
+                  >
+                    {item}
+                  </span>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </section>
 
         {/* ── Contact / CTA ─────────────────────────────────────────────────── */}
