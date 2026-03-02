@@ -1,0 +1,32 @@
+
+> sync-automations@ lint B:\Projects\personal website\sync-automations
+> turbo run lint
+
+• turbo 2.8.12
+• Packages in scope: @sync-automations/config, @sync-automations/types, @sync-automations/ui, @sync-automations/utils, api, web
+• Running lint in 6 packages
+• Remote caching disabled
+api:lint: cache miss, executing 394c7fe62088f5d8
+web:lint: cache miss, executing 67b5839a97c750ec
+api:lint: 
+api:lint: > api@1.0.0 lint B:\Projects\personal website\sync-automations\apps\api
+api:lint: > next lint
+api:lint: 
+web:lint: 
+web:lint: > web@1.0.0 lint B:\Projects\personal website\sync-automations\apps\web
+web:lint: > next lint
+web:lint: 
+web:lint: Invalid project directory provided, no such directory: B:\Projects\personal website\sync-automations\apps\web\lint
+api:lint: Invalid project directory provided, no such directory: B:\Projects\personal website\sync-automations\apps\api\lint
+web:lint:  ELIFECYCLE  Command failed with exit code 1.
+api:lint:  ELIFECYCLE  Command failed with exit code 1.
+web:lint: ERROR: command finished with error: command (B:\Projects\personal website\sync-automations\apps\web) C:\Users\soura\AppData\Local\pnpm\.tools\pnpm\8.15.5\bin\pnpm.CMD run lint exited (1)
+web#lint: command (B:\Projects\personal website\sync-automations\apps\web) C:\Users\soura\AppData\Local\pnpm\.tools\pnpm\8.15.5\bin\pnpm.CMD run lint exited (1)
+
+ Tasks:    0 successful, 2 total
+Cached:    0 cached, 2 total
+  Time:    1.469s 
+Failed:    web#lint
+
+ ERROR  run failed: command  exited (1)
+ ELIFECYCLE  Command failed with exit code 1.

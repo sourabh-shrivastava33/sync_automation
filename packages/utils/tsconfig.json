@@ -1,0 +1,8 @@
+{
+  "extends": "@sync-automations/config/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "include": ["."],
+  "exclude": ["dist", "node_modules"]
+}

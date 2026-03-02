@@ -1,0 +1,9 @@
+{
+  "extends": "@sync-automations/config/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "outDir": "dist"
+  },
+  "include": ["."],
+  "exclude": ["dist", "node_modules"]
+}

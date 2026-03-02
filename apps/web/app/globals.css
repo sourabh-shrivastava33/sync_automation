@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8fafc; /* Light gray background */
+  --foreground: #0f172a; /* Dark text */
+  --primary: #0284c7; /* Darker blue for light mode */
+  --primary-dark: #6366f1; /* Indigo for light mode */
+  --secondary: #10b981; /* Green accent */
+  --card-bg: rgba(0, 0, 0, 0.03);
+  --border-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+  --background: #050b14; /* Deep dark navy background */
+  --foreground: #e2e8f0; /* Off-white text */
+  --primary: #00b8ff; /* Bright cyan/blue */
+  --primary-dark: #8a2be2; /* Purple/violet for gradients */
+  --secondary: #00ff9d; /* Accent green */
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  background-image:
+    radial-gradient(
+      circle at 15% 50%,
+      rgba(0, 184, 255, 0.08),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 85% 30%,
+      rgba(138, 43, 226, 0.05),
+      transparent 25%
+    );
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg, var(--primary), var(--primary-dark));
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #00b8ff, #8a2be2);
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--foreground);
+}

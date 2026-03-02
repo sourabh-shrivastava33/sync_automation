@@ -1,0 +1,92 @@
+﻿
+> sync-automations@ build B:\Projects\personal website\sync-automations
+> turbo run build
+
+node.exe : ΓÇó turbo 2.8.12
+At 
+C:\nvm4w\nodejs\pnpm.ps1:16 
+char:5
++     & "$basedir/node$exe" 
+ "$basedir/node_modules/pnpm
+/bin/pnpm.cjs"  ...
++     ~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
+    + CategoryInfo          
+    : NotSpecified: (ΓÇó t  
+  urbo 2.8.12:String) [],   
+  RemoteException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+ΓÇó Packages in scope: @sync-automations/config, @sync-automations/types, @sync-automations/ui, @sync-automations/utils, api, web
+ΓÇó Running build in 6 packages
+ΓÇó Remote caching disabled
+api:build: cache miss, executing d2bc241471c18ddd
+web:build: cache miss, executing 91c581b30a6b104a
+api:build: 
+api:build: > api@1.0.0 build B:\Projects\personal website\sync-automations\apps\api
+api:build: > next build
+api:build: 
+web:build: 
+web:build: > web@1.0.0 build B:\Projects\personal website\sync-automations\apps\web
+web:build: > next build
+web:build: 
+api:build: (node:1924) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///B:/Projects/personal%20website/sync-automations/apps/api/next.config.js is not specified and it doesn't parse as CommonJS.
+api:build: Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+api:build: To eliminate this warning, add "type": "module" to B:\Projects\personal website\sync-automations\apps\api\package.json.
+api:build: (Use `node --trace-warnings ...` to show where the warning was created)
+api:build: Γû▓ Next.js 16.1.6 (Turbopack)
+api:build: 
+api:build: ΓÜá The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+web:build: Γû▓ Next.js 16.1.6 (Turbopack)
+web:build: - Environments: .env.local
+web:build: 
+api:build:   Creating an optimized production build ...
+web:build:   Creating an optimized production build ...
+api:build: (node:1924) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///B:/Projects/personal%20website/sync-automations/apps/api/next.config.js is not specified and it doesn't parse as CommonJS.
+api:build: Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+api:build: To eliminate this warning, add "type": "module" to B:\Projects\personal website\sync-automations\apps\api\package.json.
+api:build: (Use `node --trace-warnings ...` to show where the warning was created)
+api:build: Γ£ô Compiled successfully in 6.3s
+api:build:   Running TypeScript ...
+api:build: Failed to compile.
+api:build: 
+api:build: ./middleware.ts:64:13
+api:build: Type error: Property 'ip' does not exist on type 'NextRequest'.
+api:build: 
+api:build: [0m [90m 62 |[39m   [90m// Rate Limiting[39m
+api:build:  [90m 63 |[39m   [36mconst[39m ip [33m=[39m
+api:build: [31m[1m>[22m[39m[90m 64 |[39m     request[33m.[39mip [33m||[39m request[33m.[39mheaders[33m.[39m[36mget[39m([32m"x-forwarded-for"[39m) [33m||[39m [32m"127.0.0.1"[39m[33m;[39m
+api:build:  [90m    |[39m             [31m[1m^[22m[39m
+api:build:  [90m 65 |[39m   [36mconst[39m now [33m=[39m [33mDate[39m[33m.[39mnow()[33m;[39m
+api:build:  [90m 66 |[39m
+api:build:  [90m 67 |[39m   [36mif[39m ([33m![39mrateLimitMap[33m.[39mhas(ip)) {[0m
+api:build: Next.js build worker exited with code: 1 and signal: null
+api:build: ΓÇëELIFECYCLEΓÇë Command failed with exit code 1.
+api:build: ERROR: command 
+finished with error: 
+command 
+(B:\Projects\personal websit
+e\sync-automations\apps\api)
+ C:\Users\soura\AppData\Loca
+l\pnpm\.tools\pnpm\8.15.5\bi
+n\pnpm.CMD run build exited 
+(1)
+api#build: command 
+(B:\Projects\personal websit
+e\sync-automations\apps\api)
+ C:\Users\soura\AppData\Loca
+l\pnpm\.tools\pnpm\8.15.5\bi
+n\pnpm.CMD run build exited 
+(1)
+
+ Tasks:    0 successful, 2 total
+Cached:    0 cached, 2 total
+  Time:    18.562s 
+Failed:    api#build
+
+ ERROR  run failed: command 
+ exited (1)
+ΓÇëELIFECYCLEΓÇë Command failed with exit code 1.
+

@@ -1,0 +1,6 @@
+
+> api@1.0.0 lint B:\Projects\personal website\sync-automations\apps\api
+> next lint
+
+Invalid project directory provided, no such directory: B:\Projects\personal website\sync-automations\apps\api\lint
+ ELIFECYCLE  Command failed with exit code 1.

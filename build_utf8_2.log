@@ -1,0 +1,186 @@
+﻿
+> sync-automations@ build B:\Projects\personal website\sync-automations
+> turbo run build
+
+node.exe : ΓÇó turbo 
+2.8.12
+At C:\nvm4w\nodejs\pnp
+m.ps1:16 char:5
++     & 
+"$basedir/node$exe"  "
+$basedir/node_modules/
+pnpm/bin/pnpm.cjs"  
+...
++     ~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (ΓÇó turbo    
+ 2.8.12:String) []    
+, RemoteException
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+ΓÇó Packages in scope: @sync-automations/config, @sync-automations/types, @sync-automations/ui, @sync-automations/utils, api, web
+ΓÇó Running build in 6 packages
+ΓÇó Remote caching disabled
+api:build: cache miss, executing 93a7bfc57fd59ab9
+web:build: cache miss, executing 44566e8a25c120a4
+api:build: 
+api:build: > api@1.0.0 build B:\Projects\personal website\sync-automations\apps\api
+api:build: > next build
+api:build: 
+web:build: 
+web:build: > web@1.0.0 build B:\Projects\personal website\sync-automations\apps\web
+web:build: > next build
+web:build: 
+api:build: (node:3312) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///B:/Projects/personal%20website/sync-automations/apps/api/next.config.js is not specified and it doesn't parse as CommonJS.
+api:build: Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+api:build: To eliminate this warning, add "type": "module" to B:\Projects\personal website\sync-automations\apps\api\package.json.
+api:build: (Use `node --trace-warnings ...` to show where the warning was created)
+api:build: Γû▓ Next.js 16.1.6 (Turbopack)
+api:build: 
+web:build: Γû▓ Next.js 16.1.6 (Turbopack)
+web:build: - Environments: .env.local
+web:build: 
+api:build: ΓÜá The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+api:build:   Creating an optimized production build ...
+web:build:   Creating an optimized production build ...
+api:build: (node:3312) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///B:/Projects/personal%20website/sync-automations/apps/api/next.config.js is not specified and it doesn't parse as CommonJS.
+api:build: Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+api:build: To eliminate this warning, add "type": "module" to B:\Projects\personal website\sync-automations\apps\api\package.json.
+api:build: (Use `node --trace-warnings ...` to show where the warning was created)
+api:build: Γ£ô Compiled successfully in 8.6s
+api:build:   Running TypeScript ...
+api:build:   Collecting page data using 11 workers ...
+api:build:   Generating static pages using 11 workers (0/5) ...
+api:build:   Generating static pages using 11 workers (1/5) 
+api:build:   Generating static pages using 11 workers (2/5) 
+api:build:   Generating static pages using 11 workers (3/5) 
+api:build: Γ£ô Generating static pages using 11 workers (5/5) in 1534.7ms
+api:build:   Finalizing page optimization ...
+api:build: 
+api:build: Route (app)
+api:build: Γöî Γùï /_not-found
+api:build: Γö£ ╞Æ /api/contact
+api:build: Γö£ ╞Æ /api/health
+api:build: Γöö ╞Æ /api/leads
+api:build: 
+api:build: 
+api:build: ╞Æ Proxy (Middleware)
+api:build: 
+api:build: Γùï  (Static)   prerendered as static content
+api:build: ╞Æ  (Dynamic)  server-rendered on demand
+api:build: 
+web:build: 
+web:build: > Build error occurred
+web:build: Error: Turbopack build failed with 3 errors:
+web:build: ./apps/web/components/theme-toggle.tsx:4:1
+web:build: Module not found: Can't resolve 'lucide-react'
+web:build: [0m [90m 2 |[39m
+web:build:  [90m 3 |[39m [36mimport[39m [33m*[39m [36mas[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
+web:build: [31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { [33mMoon[39m[33m,[39m [33mSun[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
+web:build:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+web:build:  [90m 5 |[39m [36mimport[39m { useTheme } [36mfrom[39m [32m"next-themes"[39m[33m;[39m
+web:build:  [90m 6 |[39m
+web:build:  [90m 7 |[39m [36mexport[39m [36mfunction[39m [33mThemeToggle[39m() {[0m
+web:build: 
+web:build: 
+web:build: 
+web:build: Import traces:
+web:build:   Client Component Browser:
+web:build:     ./apps/web/components/theme-toggle.tsx [Client Component Browser]
+web:build:     ./apps/web/app/page.tsx [Client Component Browser]
+web:build:     ./apps/web/app/page.tsx [Server Component]
+web:build: 
+web:build:   Client Component SSR:
+web:build:     ./apps/web/components/theme-toggle.tsx [Client Component SSR]
+web:build:     ./apps/web/app/page.tsx [Client Component SSR]
+web:build:     ./apps/web/app/page.tsx [Server Component]
+web:build: 
+web:build: https://nextjs.org/docs/messages/module-not-found
+web:build: 
+web:build: 
+web:build: ./apps/web/components/theme-provider.tsx:4:1
+web:build: Module not found: Can't resolve 'next-themes'
+web:build: [0m [90m 2 |[39m
+web:build:  [90m 3 |[39m [36mimport[39m [33m*[39m [36mas[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
+web:build: [31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { [33mThemeProvider[39m [36mas[39m [33mNextThemesProvider[39m } [36mfrom[39m [32m"next-themes"[39m[33m;[39m
+web:build:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+web:build:  [90m 5 |[39m [36mimport[39m { type [33mThemeProviderProps[39m } [36mfrom[39m [32m"next-themes"[39m[33m;[39m
+web:build:  [90m 6 |[39m
+web:build:  [90m 7 |[39m [36mexport[39m [36mfunction[39m [33mThemeProvider[39m({ children[33m,[39m [33m...[39mprops }[33m:[39m [33mThemeProviderProps[39m) {[0m
+web:build: 
+web:build: 
+web:build: 
+web:build: Import trace:
+web:build:   Server Component:
+web:build:     ./apps/web/components/theme-provider.tsx
+web:build:     ./apps/web/app/layout.tsx
+web:build: 
+web:build: https://nextjs.org/docs/messages/module-not-found
+web:build: 
+web:build: 
+web:build: ./apps/web/components/theme-toggle.tsx:5:1
+web:build: Module not found: Can't resolve 'next-themes'
+web:build: [0m [90m 3 |[39m [36mimport[39m [33m*[39m [36mas[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
+web:build:  [90m 4 |[39m [36mimport[39m { [33mMoon[39m[33m,[39m [33mSun[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
+web:build: [31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { useTheme } [36mfrom[39m [32m"next-themes"[39m[33m;[39m
+web:build:  [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+web:build:  [90m 6 |[39m
+web:build:  [90m 7 |[39m [36mexport[39m [36mfunction[39m [33mThemeToggle[39m() {
+web:build:  [90m 8 |[39m   [36mconst[39m { setTheme[33m,[39m theme } [33m=[39m useTheme()[33m;[39m[0m
+web:build: 
+web:build: 
+web:build: 
+web:build: Import traces:
+web:build:   Client Component Browser:
+web:build:     ./apps/web/components/theme-toggle.tsx [Client Component Browser]
+web:build:     ./apps/web/app/page.tsx [Client Component Browser]
+web:build:     ./apps/web/app/page.tsx [Server Component]
+web:build: 
+web:build:   Client Component SSR:
+web:build:     ./apps/web/components/theme-toggle.tsx [Client Component SSR]
+web:build:     ./apps/web/app/page.tsx [Client Component SSR]
+web:build:     ./apps/web/app/page.tsx [Server Component]
+web:build: 
+web:build: https://nextjs.org/docs/messages/module-not-found
+web:build: 
+web:build: 
+web:build:     at <unknown> (./apps/web/components/theme-toggle.tsx:4:1)
+web:build:     at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+web:build:     at <unknown> (./apps/web/components/theme-provider.tsx:4:1)
+web:build:     at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+web:build:     at <unknown> (./apps/web/components/theme-toggle.tsx:5:1)
+web:build:     at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+web:build: ΓÇëELIFECYCLEΓÇë Command failed with exit code 1.
+web:build: ERROR: 
+command finished with 
+error: command 
+(B:\Projects\personal 
+website\sync-automatio
+ns\apps\web) C:\Users\
+soura\AppData\Local\pn
+pm\.tools\pnpm\8.15.5\
+bin\pnpm.CMD run 
+build exited (1)
+web#build: command 
+(B:\Projects\personal 
+website\sync-automatio
+ns\apps\web) C:\Users\
+soura\AppData\Local\pn
+pm\.tools\pnpm\8.15.5\
+bin\pnpm.CMD run 
+build exited (1)
+
+ Tasks:    1 successful, 2 total
+Cached:    0 cached, 2 total
+  Time:    36.065s 
+Failed:    web#build
+
+ ERROR  run failed: 
+command  exited (1)
+ΓÇëELIFECYCLEΓÇë Command failed with exit code 1.
